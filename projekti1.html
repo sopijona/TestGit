@@ -11,13 +11,13 @@
         <div class="login-box">
             <h2>Log in</h2>
             <form>
-                <div class="user-box">
+                <div class="user-box" id="user">
                     <label>Username</label>
                     <input type="text" name="" placeholder="Username..." required>
                     
                 </div>
                 <br>
-                <div class="user-box"> 
+                <div class="user-box" id="pass"> 
                     <label>Password</label>
                     <input type="text" name="" placeholder="Password..." required>
                     <br>
@@ -31,3 +31,14 @@
         </div>
     </body>
 </html>
+<script>
+    var Username = document.getElementById("user");
+    var Password = document.getElementById("pass");
+
+window.onclick = function(event) {
+    if (event.target == login) {
+        login.style.display = "none";
+    }
+}
+
+</script>
