@@ -22,9 +22,8 @@ var pht6 = document.querySelector("img");
 function showPht6(){
     pht6.style.marginLeft="-125%";
 }
-/*
-var username =/^w+[._-]?\w+@[a-z]\.[a-z]{2,,3}/;
-var password =/^[A-Z][a-z]{8,20}/
 
-var login = document.getElementsByClassName("button");
-*/
+
+
+
+
