@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif, ;
+}
+html{
+    background: linear-gradient(#006992,#2E1760);
+    scroll-behavior: smooth;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}/*header*/
+header{
+    width: 100vw;
+    color: #006992;
+    height: 60px;
+    position: fixed;
+    align-items: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(#281236,#271964);
+    padding-top: 13px;
+    box-sizing: border-box;
+    box-shadow: 0 15px 35px rgba(0,0,0,3);
+    display: flex;
+}
+header .logo{
+    padding: 0;
+    font-size: 20px;
+    font-weight: bolder;
+    color: aliceblue;
+    text-transform: uppercase;  
+}
+header .logo span{
+    color:#1b62c0;
+}
+header a{
+    margin: 10px;
+    padding-left:5vw;
+    text-align: start;
+    color: #00C2D1;
+}
+
+#login {
+    background-color: #3a72a7;
+    color: white;
+    padding: 20%;
+    margin-left: -10%;
+    text-align: center;
+    box-sizing: border-box;
+    
+    background: linear-gradient(#006992,#2E1760);
+    border-radius: 50px;
+    border-color: #0b0b30;
+}
+.buttons{
+    margin-top: 5px;
+    background-color: #3a72a7;
+    color: rgb(170, 178, 216);
+    width: 100px;
+    padding: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 25px rgb(3, 3, 36);
+    border-radius: 50px;
+    border-color: #232355;
+}
+.user-box{
+    margin: 20%;
+    overflow: hidden;
+    transform: none;
+    text-transform: none;
+}
+
+.button.hover{
+    background-color: #3d227e;
+}
+/*foto slider*/
+main{
+    width: 100%;
+    height: 90%;
+}
+.slider{
+    width: 100%; 
+    height: 100%;
+    overflow: hidden;
+}
+.buttons{
+    width: 20%;
+    height: 30px;
+    margin-left: 40%;
+    display: flex;
+    border-radius: 110px;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 15px 25px rgb(24, 4, 43);
+}
+.buttons label{
+    width: 8%;
+    height: 60%; 
+    border-radius: 120px;
+    background-color: rgb(84, 58, 109);
+    box-shadow: 0 15px 25px rgba(0,0,0,20);
+}
+.images{
+    width: 400%;
+    height: 100%;
+}
+.images img{
+    width: 25%;
+    height: 100%;
+    transition: 1s;
+    scroll-behavior: smooth;
+}
+.hide{
+    display: none;
+}
+/*kutit*/
+.boxs {
+    height: auto;
+    display: flex;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 25px 30px #160833;
+}
+.box{
+    width: 300px;
+    height: 225px;
+    background-color: rgb(89, 129, 204);
+    color: white;
+    border: 25px;
+    padding-top: 5%;
+    border-radius: 30px;
+    box-shadow: #525281;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+
+/*foto text*/
+.image {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    z-index: 20;
+    box-shadow: 10px 10px 53px 0px rgba(0, 0, 0, 0.49);
+}
+.card-wrapper {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 35%;
+    position: relative;
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 10px 10px 53px 0px rgba(0, 0, 0, 0.49);
+}
+.card-wrapper:hover .image {
+    filter: blur(1.4px);
+    transform: scale(1.5);
+    overflow: hidden;
+    transition: all 0.3s linear;
+    box-shadow: inset -6px -1px 32px 0px rgba(0, 0, 0, 0.75);
+}
+.card-wrapper:hover .card-bottom {
+    transform: translate(0%, -50%);
+    transition: all 0.8s ease;
+    background-color: rgba(90, 24, 154, 50%);
+}
+.card-top {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.card-bottom {
+    width: 100%;
+    position: absolute;
+    z-index: 20;
+    display: nonee;
+    top: 50%;
+    background-color: rgba(110, 122, 92, 0);
+    padding: 100px 20px;
+    color: #fff;
+    transform: translate(100%, -50%);    
+}
+.top-text {
+    font-size: 25px;
+    line-height: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.bottom-text {
+    font-size: 15px;
+}
+.button1 {
+    position: relative;
+    display: block;
+    outline: none;
+    cursor: pointer;
+    margin-top: 25px;
+    border: none;
+    border-radius: 3px;
+    background-color: #00C2D1;
+    color: #fff;
+    padding: 5px 20px;    
+}
+/*menytat e komunikimit*/
+footer{
+    height: 130px;
+    background-color: linear-gradient(#1a1153,#191e64);
+    box-shadow: 0 15px 30px rgba(0,0,0,3);
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-left: 10%;
+    padding: 10%;
+    padding-top: 5%;
+    margin: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+h4{
+    color: rgb(19, 20, 46);
+}
+.col1 p {
+    color: #17133a;
+}
+.col2 p a{
+    color: #bcd100;
+}
+.col3 p a{
+    color: #007dd1;
+}

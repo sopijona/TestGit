@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta >
+        <title>Photoghaphy</title>
+        <link rel="stylesheet" href="ProjektiCss.css">
+    </head>
+    <body>
+        <header>
+            <p class="logo"><span>P</span>hotoghaphy</p>
+            <a href="http://127.0.0.1:5501/projekti.html">Home</a>
+            <a href="http://127.0.0.1:5501/aboutus.html">About us</a>
+            <a href="http://127.0.0.1:5501/contactus.html">Contact us</a>
+            
+            <div class="log in">
+                <button onclick="document.getElementById('id')">
+                <a href="http://127.0.0.1:5501/projekti1.html" id="login" >Log_in</a></button>
+            </div>
+        </header><br>
+        <main>
+        <div class="slider">
+            <div class="images">
+                <img src="https://i.im.ge/2022/11/14/SubQhF.turquoise-katun-river-gorge-is-surrounded-by-high-mountains-majestic-autumn-sky-stormy-mountain-stream-runs-among-rocks-landscape-altai-mountains-beautiful-places-planet.jpg">
+                <img src="https://i.im.ge/2022/11/14/Subry8.aerial-shot-beautiful-tree-forest-covered-with-fog-bled-slovenia.jpg">
+                <img src="https://i.im.ge/2022/11/14/SuboB9.colorful-autumn-landscape.jpg">
+                <img src="https://i.im.ge/2022/11/14/SubMo6.beautiful-aerial-shot-fronalpstock-mountains-switzerland-beautiful-pink-blue-sky.jpg">
+                <img src="https://i.im.ge/2022/09/19/1qcyY0.dylan-taylor-0a5ZhQN6cUE-unsplash.jpg">
+                <img src="https://i.im.ge/2022/09/19/1qbDEc.artem-labunsky-zVKAExjrloM-unsplash.jpg">
+            </div>
+        </div>
+        <div class="buttons">
+            <label onclick="showPht1()"></label>
+            <label onclick="showPht2()"></label>
+            <label onclick="showPht3()"></label>
+            <label onclick="showPht4()"></label>
+            <label onclick="showPht5()"></label>
+            <label onclick="showPht6()"></label>
+    
+        </div>
+    </main>
+    <div class="boxs">
+
+        <div class="box" style="text-align: center;"><strong><b>PHOTO</b></strong><br><br>
+        </div>
+        <div class="box" style="text-align: center;"><strong><b>ART</b></strong><br> shenon <br><br>
+            diqka ama shkrut se ska qaq ven kqyre kontrollo <br> eshe qitn naj fakt naj sen interesant</div>
+        <div class="box"style="text-align: center;"><strong><b>DETAILS</b></strong><br><br>
+            sheno diqka</div>
+        <div class="box"style="text-align: center;"><strong><b>INSPIRE</b></strong><br><br>
+             sheno</div>
+        <div class="box"style="text-align: center;"><strong><b>DIMENSION</b></strong><br><br> 
+            sheno</div>
+        <div class="box"style="text-align: center;"><strong><b>CREATIVITY</b></strong><br><br> 
+            sheno</div>
+        <div class="box"style="text-align: center;"><strong><b>BEAUTY</b></strong><br><br> 
+            sheno</div>
+        <div class="box"style="text-align: center;"><strong><b>INFO</b></strong><br><br>
+             sheno</div>
+    </div>
+    <div class="card-wrapper">
+        <div class="card-top">
+            <img class="image" src=https://i.im.ge/2022/11/15/SOLM3q.turquoise-katun-river-gorge-is-surrounded-by-high-mountains-majestic-autumn-sky-stormy-mountain-stream-runs-among-rocks-landscape-altai-mountains-beautiful-places-planet-1.jpg>
+        </div>
+        <div class="card-bottom">
+            <span class="top-text">Creative </span><br>
+            <span class="bottom-text">If you like to see much more of our art</span>
+            <br>
+            <button class="button1"><a href="http://127.0.0.1:5501/more.html">touch here</a></button>
+        </div>
+    </div>
+    <footer href="#">
+        <h4>-Informacion-</h4>
+        <div class="col1">
+            <p>You can contact us in this sites:</p>
+            <br>
+            <p>Facebook:</p>
+            <p>Instagram:</p>
+            <p>Email:</p>
+            <br>
+            <p style="text-align: end;">Thank you.</p>
+        </div>
+        <div class="col2">
+            <br> <br>
+            <p><a href="https://www.facebook.com/"><i>Eriona B Sopi</i></a></p>
+            <p><a href="https://www.instagram.com/"><i>eerijonaa__</i></a></p>
+            <p><a href="https://mail.google.com/mail/"><i>sopijona@gmail.com</i></a></p>
+        </div>
+        <div class="col3" style="text-align: end;">
+            <br><br>
+            <p><a href="https://www.facebook.com/"><i>endrit</i></a></p>
+            <p><a href="https://www.instagram.com/"><i>endrit</i></a></p>
+            <p><a href="https://www.google.com/mail/"><i>endrit</i></a></p>
+        </div>
+    </footer>
+    </body>
+</html>
+<script>
+    var pht1 = document.querySelector("img");
+function showPht1(){
+    pht1.style.marginLeft="0";
+}
+var pht2 = document.querySelector("img");
+function showPht2(){
+    pht2.style.marginLeft="-25%";
+}
+var pht3 = document.querySelector("img");
+function showPht3(){
+    pht3.style.marginLeft="-50%";
+}
+var pht4 = document.querySelector("img");
+function showPht4(){
+    pht4.style.marginLeft="-75%";
+}
+var pht5 = document.querySelector("img");
+function showPht5(){
+    pht5.style.marginLeft="-100%";
+}
+var pht6 = document.querySelector("img");
+function showPht6(){
+    pht6.style.marginLeft="-125%";
+}
+
+
+
+
+var login = document.getElementById('id');
+
+
+window.onclick = function(event) {
+    if (event.target == login) {
+        login.style.display = "none";
+    }
+}
+</script>
