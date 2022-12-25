@@ -10,20 +10,12 @@
         
         <div class="login-box">
             <h2>Log in</h2>
-            <form>
-                <div class="user-box" id="user">
-                    <label>Username</label>
-                    <input type="username" name="" placeholder="Username..." >
-                    
-                </div>
-                <br>
-                <div class="user-box" id="pass"> 
-                    <label>Password</label>
-                    <input type="password" name="" placeholder="Password...">
-                    <br>
-                    <br>
-                    <button class="button" onclick="CheckPassword(document.form1.text1)">Log in</button>
-                </div>
+            <form name="form1" action="#">
+                    <label onclick="CheckUsername(document.form1.text1)">Username</label>
+                    <input type="username" name="text1"  placeholder="Username..." > &nbsp;
+                    <label onclick="CheckPassword(document.form1.text2)">Password</label>
+                    <input type="password" name="text2"  placeholder="Password..."> &nbsp; &nbsp;
+                    <button class="button">Log in</button>
                 <h6>If you don't have an account you can <a href="http://127.0.0.1:5501/projekti2.html"><strong><i>Create.</i></strong></a><br>
                     <br>
                 If you like to go back to home page touch <a href="http://127.0.0.1:5501/projekti.html"><strong><i>here.</i></strong></a> </h6>
@@ -33,14 +25,14 @@
 </html>
 <script>
 function CheckUsername(inputtxt){
-    var Username = /^w+[._-]?\w+@[a-z]\.[a-z]{2,,3}/;
+    var Username = /^w+[._-]?\w+@[a-z]\.[a-z]{2,3}/;
 
     if(inputtxt.value.match(Username)){
         alert('corect, try another...')
         return true;
     }
     else{
-        alert("wrong!");
+        alert("Wrong!, try again like this -exapmle@mail.net-");
         return false;
     }
 }
@@ -48,11 +40,10 @@ function CheckPassword(inputtxt){
     var Password = /^[A-Za-z][1,9].\w{8,20}$/;
 
     if(inputtxt.value.match(Password)){
-        alert('corect, try another...')
         return true;
     }
     else{
-        alert("wrong!");
+        alert("Wrong!, try again like this -exapmle123-");
         return false;
     }
 }
