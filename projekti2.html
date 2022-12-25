@@ -4,41 +4,80 @@
           <title></title>
           <link rel="stylesheet" href="ProjektiCss2.css">
     </head>
-    <body>
+    <body onload="document.form1.text1.focus()" 
+    onload="document.form1.text2.focus()" 
+    onload="document.form1.text3.focus()">
         <h1>Photography</h1>
         <div class="login-box">
             <h2>Sing up</h2>
             <p id="obj">It's quick and easy.</p>
-            <form>
+            <form name="form1">
                 <div class="user-box">
-                    <label>First name</label>
-                    <input type="text" class="user-text" placeholder="First name..." required>
+                    <label type="name" >First name</label>
+                    <input type="text" name="text1" class="user-text" placeholder="First name..." required>
                 </div>
                 <br>
                 <div class="user-box">
-                    <label>Last name</label>
-                    <input type="text" class="user-text" placeholder="Last name..." required>
+                    <label type="last-name">Last name</label>
+                    <input type="text" name="text2" class="user-text" placeholder="Last name..." required>
                 </div>
                 <br>
                 <div class="user-box">
-                    <label>Birthday</label>
+                    <label type="birthday">Birthday</label>
                     <input type="date" class="user-text" required>
                 </div>
-            <br>
+                <br>
                 <div class="user-box">
-                    <label>Email</label>
-                    <input type="Email" class="user-text" placeholder="Email..." required>
+                    <label type="email">Email</label>
+                    <input type="Email" name="text3" class="user-text" placeholder="Email..." required>
                 </div>
                 <br>
-                <label for="Name" required>Gender:</label>
+                <label for="Name" required type="gender">Gender:</label>
                 Male<input type="radio" name="Gender"> 
-                Female <input type="radio" name="Gernder">
+                Female <input type="radio" name="Gender">
                 <br>
                 <br>
-                <button class="button">Log in</button>
+                <button class="button" onclick="CheckName(document.form1.text1)"
+                onclick="CheckLastName(document.form1.text2)"
+                onclick="CheckEmail(document.form1.text3)">Log in</button>
                 <h6>If you like to go back to <a href="http://127.0.0.1:5501/projekti1.html"><strong><i>Login</i></strong></a><br><br>
                     If you like to go back to home page touch <a href="http://127.0.0.1:5501/projekti.html"><strong><i>here.</i></strong></a> </h6>
             </form>
         </div>
     </body>
 </html>
+<script>
+    function CheckName(inputtxt){
+    var name = /[A-Z]{1}[a-z]{2,20}/;
+
+    if(inputtxt.value.match(name)){
+        return true;
+    }
+    else{
+        alert("Wrong!, try again, like this -Exapmle-");
+        return false;
+    }
+}
+function CheckLastName(inputtxt){
+    var Laatname = /[A-Z]{1}[a-z]{2,20}/;
+
+    if(inputtxt.value.match(Lastname)){
+        return true;
+    }
+    else{
+        alert("Wrong!, try again, like this -Exapmle-");
+        return false;
+    }
+}
+function CheckEmail(inputtxt){
+    var Username = /^w+[._-]?\w+@[a-z]\.[a-z]{2,3}/;
+
+    if(inputtxt.value.match(Username)){
+        return true;
+    }
+    else{
+        alert("Wrong!, try again, like this -exapmle@mail.net-");
+        return false;
+    }
+}
+</script>

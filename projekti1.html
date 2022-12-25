@@ -3,19 +3,22 @@
     <head><title>Log_in_</title>
         <link rel="stylesheet" href="ProjektiCss1.css">
     </head>
-    <body onload="document.form1.text1.focus()">
-
+    <body onload="document.form1.text1.focus()" 
+    onload="document.form1.text2.focus()">
         <h1>Photography</h1>
         <h4>Put some of our art in you life...</h4>
         
         <div class="login-box">
             <h2>Log in</h2>
-            <form name="form1" action="#">
-                    <label onclick="CheckUsername(document.form1.text1)">Username</label>
-                    <input type="username" name="text1"  placeholder="Username..." > &nbsp;
-                    <label onclick="CheckPassword(document.form1.text2)">Password</label>
-                    <input type="password" name="text2"  placeholder="Password..."> &nbsp; &nbsp;
-                    <button class="button">Log in</button>
+            <form name="form1" action="#">                    
+                <label>Username</label>
+                <input type="username" name="text1"  placeholder="Username..." required> 
+<br>
+                <label>Password</label>
+                <input type="password" name="text2"  placeholder="Password..." required> 
+<br>    
+                <button class="button" onclick="CheckUsername(document.form1.text1)"
+                onclick="CheckPassword(document.form1.text2)">Log in</button>
                 <h6>If you don't have an account you can <a href="http://127.0.0.1:5501/projekti2.html"><strong><i>Create.</i></strong></a><br>
                     <br>
                 If you like to go back to home page touch <a href="http://127.0.0.1:5501/projekti.html"><strong><i>here.</i></strong></a> </h6>
@@ -28,11 +31,10 @@ function CheckUsername(inputtxt){
     var Username = /^w+[._-]?\w+@[a-z]\.[a-z]{2,3}/;
 
     if(inputtxt.value.match(Username)){
-        alert('corect, try another...')
         return true;
     }
     else{
-        alert("Wrong!, try again like this -exapmle@mail.net-");
+        alert("Wrong!, try again, like this -exapmle@mail.net-");
         return false;
     }
 }
@@ -43,7 +45,7 @@ function CheckPassword(inputtxt){
         return true;
     }
     else{
-        alert("Wrong!, try again like this -exapmle123-");
+        alert("Wrong!, try again, like this -exapmle123-");
         return false;
     }
 }
