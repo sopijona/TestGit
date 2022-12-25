@@ -3,7 +3,7 @@
     <head><title>Log_in_</title>
         <link rel="stylesheet" href="ProjektiCss1.css">
     </head>
-    <body>
+    <body onload="document.form1.text1.focus()">
 
         <h1>Photography</h1>
         <h4>Put some of our art in you life...</h4>
@@ -22,7 +22,7 @@
                     <input type="password" name="" placeholder="Password...">
                     <br>
                     <br>
-                    <button class="button" >Log in</button>
+                    <button class="button" onclick="CheckPassword(document.form1.text1)">Log in</button>
                 </div>
                 <h6>If you don't have an account you can <a href="http://127.0.0.1:5501/projekti2.html"><strong><i>Create.</i></strong></a><br>
                     <br>
