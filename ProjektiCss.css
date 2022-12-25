@@ -11,7 +11,7 @@ html{
 body{
     width: 100vw;
     height: 100vh;
-}/*header*/
+}/*navitori*/
 header{
     width: 100vw;
     color: #006992;
@@ -41,7 +41,7 @@ header a{
     text-align: start;
     color: #00C2D1;
 }
-
+/*log in i dizajnuar vetem buton */
 #login {
     background-color: #3a72a7;
     color: white;
