@@ -10,6 +10,28 @@
             <a href="http://127.0.0.1:5501/aboutus.html">About us</a>
             <a href="http://127.0.0.1:5501/contactus.html">Contact us</a>
         </header><br>
+    
+        <main>
+            <div class="slider">
+                <div class="images">
+                    <img src="https://i.im.ge/2022/11/14/SubQhF.turquoise-katun-river-gorge-is-surrounded-by-high-mountains-majestic-autumn-sky-stormy-mountain-stream-runs-among-rocks-landscape-altai-mountains-beautiful-places-planet.jpg">
+                    <img src="https://i.im.ge/2022/11/14/Subry8.aerial-shot-beautiful-tree-forest-covered-with-fog-bled-slovenia.jpg">
+                    <img src="https://i.im.ge/2022/11/14/SuboB9.colorful-autumn-landscape.jpg">
+                    <img src="https://i.im.ge/2022/11/14/SubMo6.beautiful-aerial-shot-fronalpstock-mountains-switzerland-beautiful-pink-blue-sky.jpg">
+                    <img src="https://i.im.ge/2022/09/19/1qcyY0.dylan-taylor-0a5ZhQN6cUE-unsplash.jpg">
+                    <img src="https://i.im.ge/2022/09/19/1qbDEc.artem-labunsky-zVKAExjrloM-unsplash.jpg">
+                </div>
+            </div>
+            <div class="buttons">
+                <label onclick="showPht1()"></label>
+                <label onclick="showPht2()"></label>
+                <label onclick="showPht3()"></label>
+                <label onclick="showPht4()"></label>
+                <label onclick="showPht5()"></label>
+                <label onclick="showPht6()"></label>
+        
+            </div>
+        </main>
     </body>
 </html>
 <style>
@@ -55,4 +77,71 @@ header a{
     text-align: start;
     color: #00C2D1;
 }
+/*foto slider*/
+main{
+    width: 100%;
+    height: 90%;
+}
+.slider{
+    width: 100%; 
+    height: 100%;
+    overflow: hidden;
+}
+.buttons{
+    width: 20%;
+    height: 30px;
+    margin-left: 40%;
+    display: flex;
+    border-radius: 110px;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 15px 25px rgb(24, 4, 43);
+}
+.buttons label{
+    width: 8%;
+    height: 60%; 
+    border-radius: 120px;
+    background-color: rgb(84, 58, 109);
+    box-shadow: 0 15px 25px rgba(0,0,0,20);
+}
+.images{
+    width: 400%;
+    height: 100%;
+}
+.images img{
+    width: 25%;
+    height: 100%;
+    transition: 1s;
+    scroll-behavior: smooth;
+}
+.hide{
+    display: none;
+}
 </style>
+<script>
+    var pht1 = document.querySelector("img");
+function showPht1(){
+    pht1.style.marginLeft="0";
+}
+var pht2 = document.querySelector("img");
+function showPht2(){
+    pht2.style.marginLeft="-25%";
+}
+var pht3 = document.querySelector("img");
+function showPht3(){
+    pht3.style.marginLeft="-50%";
+}
+var pht4 = document.querySelector("img");
+function showPht4(){
+    pht4.style.marginLeft="-75%";
+}
+var pht5 = document.querySelector("img");
+function showPht5(){
+    pht5.style.marginLeft="-100%";
+}
+var pht6 = document.querySelector("img");
+function showPht6(){
+    pht6.style.marginLeft="-125%";
+}
+
+</script>
